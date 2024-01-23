@@ -47,7 +47,7 @@ pub fn docs_routes(state: AppState) -> ApiRouter {
 }
 
 async fn index() -> impl IntoApiResponse {
-    let html = include_str!("index.html");
+    let html = include_str!("static/index.html");
     Html(html).into_response()
 }
 
